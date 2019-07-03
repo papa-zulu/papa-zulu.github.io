@@ -14,6 +14,31 @@ Expanded:
 <pre id="output"></pre>
 <br / >
 <div id="error"></div>
+	
+<br />
+	<br />
+	<br />
+	<br />
+	<br />
+<pre>
+Test date
+{
+"@context": {
+"name": "https://schema.org/name",
+"homepage": {
+  "@id": "https://schema.org/url",
+  "@type": "@id"
+},
+"image": {
+  "@id": "https://schema.org/image",
+  "@type": "@id"
+}
+},
+"image": "https://manu.sporny.org/images/manu.png",
+"name": "Manu Sporny",
+"homepage": "https://manu.sporny.org/"
+}
+</pre>
 
 <script>
 	document.getElementById('input-textarea').addEventListener("input", parseInput);
@@ -37,6 +62,8 @@ Expanded:
 			document.getElementById('error').innerHTML = e.message;
 		}
 	}
+	
+	
 
 
 	const doc = {
