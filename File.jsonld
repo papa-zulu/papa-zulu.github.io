@@ -19,7 +19,7 @@
 					"@id": "https://papa-zulu.github.io/Ratio",
 					"@type": "https://schema.org/Number"
 				}
-			}
+			},
 			"@id": "https://papa-zulu.github.io/Settings",
 			"@type": "@id"
 		}
