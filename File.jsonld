@@ -1,15 +1,9 @@
 {
 	"@context" : {
 		  "@version": 1.1,
-		  "File": {
-			  "@type": "https://papa-zulu.github.io/File",
-			  "@id": "https://papa-zulu.github.io/File",
-			  "@context": {
-				  "url": {
-					"@id": "https://papa-zulu.github.io/ImageUrl",
-					"@type": "@id"
-				  }
-			  }
+		  "url": {
+			"@id": "https://papa-zulu.github.io/ImageUrl",
+			"@type": "@id"
 		}
 	}
 }
