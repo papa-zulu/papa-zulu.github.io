@@ -6,7 +6,7 @@
 			  "@id": "https://papa-zulu.github.io/File",
 			  "@context": {
 				  "url": {
-					"@id": "sirius:/imageUrl",
+					"@id": "https://papa-zulu.github.io/ImageUrl",
 					"@type": "@id"
 				  }
 			  }
