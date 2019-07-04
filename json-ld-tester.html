@@ -45,6 +45,32 @@ Test data
 </div>
 -->
 <script>
+	var myCodeMirror = CodeMirror.fromTextArea(document.getElementById('input-textarea'), {name: "javascript", json: true, lineNumbers:true});
+	myCodeMirror.on("change", function(cm, change) {
+		parseJsonLd(cm.getValue());
+	});
+	
+	function parseJsonLd(data) {
+		try {
+			jsonld.expand(JSON.parse(data.trim()), function(err, expanded) {
+				
+				var formatted = JSON.stringify(expanded, null, 2);
+				document.getElementById('output').innerHTML = formatted;
+				console.log(formatted);
+
+				if (err !== null) {
+					document.getElementById('error').innerHTML = err.message;
+				} else {
+					document.getElementById('error').innerHTML = '';
+				}
+			});
+		} catch(e) {
+			document.getElementById('error').innerHTML = e.message;
+		}
+	}
+	
+	
+	/*
 	document.getElementById('input-textarea').addEventListener("input", parseInput);
 
 	function parseInput() {
@@ -66,6 +92,7 @@ Test data
 			document.getElementById('error').innerHTML = e.message;
 		}
 	}
+	*/
 
 </script>
 
