@@ -1,8 +1,26 @@
 {
 	"@context" : {
-		  "@version": 1.1,
-		  "url": {
+		"@version": 1.1,
+		"url": {
 			"@id": "https://papa-zulu.github.io/ImageUrl",
+			"@type": "@id"
+		},
+		"file_id": {
+			"@id": "https://papa-zulu.github.io/FileId",
+			"@type": "https://schema.org/Number"
+		},
+		"settings": {
+			"@context": {
+				"seo_description": {
+					"@id": "https://papa-zulu.github.io/Description",
+					"@type": "https://schema.org/Text"
+				},
+				"aspect_ratio": {
+					"@id": "https://papa-zulu.github.io/Ratio",
+					"@type": "https://schema.org/Number"
+				}
+			}
+			"@id": "https://papa-zulu.github.io/Settings",
 			"@type": "@id"
 		}
 	}
